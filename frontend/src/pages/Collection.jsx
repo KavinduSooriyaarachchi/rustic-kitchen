@@ -72,7 +72,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory, search, showSearch,products]);
+  }, [category, subCategory, search, showSearch, products]);
 
   useEffect(() => {
     sortProduct();
@@ -105,33 +105,33 @@ const Collection = () => {
               <input
                 type="checkbox"
                 className="w-3"
-                value={"Men"}
+                value={"Breakfast"}
                 onChange={toggleCategory}
               />
-              Men
+              Breakfast
             </p>
             <p className="flex gap-2">
               <input
                 type="checkbox"
                 className="w-3"
-                value={"Women"}
+                value={"Lunch"}
                 onChange={toggleCategory}
               />
-              Women
+              Lunch
             </p>
             <p className="flex gap-2">
               <input
                 type="checkbox"
                 className="w-3"
-                value={"Kids"}
+                value={"Dinner"}
                 onChange={toggleCategory}
               />
-              Kids
+              Dinner
             </p>
           </div>
         </div>
         {/* SubCategory Filter */}
-        <div
+        {/* <div
           className={`border border-gray-300 pl-5 py-3 my-5 ${
             showFilter ? "" : "hidden"
           } sm:block `}
@@ -166,13 +166,13 @@ const Collection = () => {
               Winterwear
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Side */}
       <div className="flex-1">
         <div className="flex justify-between text-base sm:text-2xl mb-4">
-          <Title text1={"ALL"} text2={"COLLECTIONS"} />
+          <Title text1={"FOOD"} text2={"COLLECTION"} />
 
           {/* Product Sort */}
           <select
