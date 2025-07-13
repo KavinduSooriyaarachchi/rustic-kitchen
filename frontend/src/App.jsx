@@ -23,20 +23,20 @@ const App = () => {
 
   // Route-to-title mapping
   const routeTitles = {
-    "/": "Home - Forever",
-    "/collection": "Collection - Forever",
-    "/about": "About Us - Forever",
-    "/contact": "Contact Us - Forever",
-    "/cart": "Your Cart - Forever",
-    "/login": "Login - Forever",
-    "/place-order": "Place Order - Forever",
-    "/orders": "Your Orders - Forever",
-    "/verify": "Verify Account - Forever",
+    "/": "Home - Rustic Kitchen",
+    "/collection": "Collection - Rustic Kitchen",
+    "/about": "About Us - Rustic Kitchen",
+    "/contact": "Contact Us - Rustic Kitchen",
+    "/cart": "Your Cart - Rustic Kitchen",
+    "/login": "Login - Rustic Kitchen",
+    "/place-order": "Place Order - Rustic Kitchen",
+    "/orders": "Your Orders - Rustic Kitchen",
+    "/verify": "Verify Account - Rustic Kitchen",
   };
 
   useEffect(() => {
     // Set the document title based on the current route
-    const title = routeTitles[location.pathname] || "Forever";
+    const title = routeTitles[location.pathname] || "Rustic Kitchen";
     document.title = title;
 
     // Trigger loader on route change

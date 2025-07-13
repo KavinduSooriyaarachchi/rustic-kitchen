@@ -16,9 +16,9 @@ const Product = () => {
     if (product) {
       setProductData(product);
       setImage(product.image[0]);
-      document.title = product.name || "Product Details - Forever"; // Update page title
+      document.title = product.name || "Product Details - Rustic Kitchen"; // Update page title
     } else {
-      document.title = "Product Not Found - Forever"; // Fallback title
+      document.title = "Product Not Found - Rustic Kitchen";
     }
   };
 
@@ -38,7 +38,7 @@ const Product = () => {
                 onClick={() => setImage(item)}
                 src={item}
                 key={index}
-                className="w-[24%] sm:w-full sm:mb-3 flex-shrink-0 cursor-pointer"
+                className="w-[80px] sm:w-[100px] sm:mb-3 flex-shrink-0 cursor-pointer"
                 alt={productData.name}
               />
             ))}
@@ -66,28 +66,15 @@ const Product = () => {
           <p className="mt-5 text-gray-500 md:w-4/5">
             {productData.description}
           </p>
-          <div className="flex flex-col gap-4 my-8">
-            <p>Select Size</p>
-            <div className="flex gap-2">
-              {productData.sizes.map((item, index) => (
-                <button
-                  onClick={() => setSize(item)}
-                  className={`border py-2 px-4 bg-gray-100 ${
-                    item === size ? "border-orange-500 " : ""
-                  } `}
-                  key={index}
-                >
-                  {item}
-                </button>
-              ))}
-            </div>
+          <div className="my-8">
+            <button
+              onClick={() => addToCart(productData._id)}
+              className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700"
+            >
+              ADD TO CART
+            </button>
           </div>
-          <button
-            onClick={() => addToCart(productData._id, size)}
-            className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700"
-          >
-            ADD TO CART
-          </button>
+
           <hr className="mt-8 sm:w-4/5" />
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1">
             <p>100% Original product.</p>

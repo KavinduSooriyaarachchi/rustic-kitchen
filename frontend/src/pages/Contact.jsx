@@ -19,19 +19,24 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-start gap-6">
           <p className="font-semibold text-xl text-gray-600">Our Store</p>
           <p className="text-gray-500">
-            102/C , Station Road <br /> Aluthgama , Sri Lanka.{" "}
+            The Rustic Kitchen <br /> Mahathenna , Belihuloya.{" "}
           </p>
           <p className="text-gray-500">
-            Tel : +94 34 222 4500 <br /> Email : contact@forever.com
+            Tel : +94 70 371 1654 <br /> Email : contact@rustickitchen.com
           </p>
           <p className="font-semibold text-xl text-gray-600">
-            Careers at Forever
+            Behind Rustic Kitchen
           </p>
           <p className="text-gray-500">
-            Learn more about our teams and job openings.
+            Rustic Kitchen is built on the passion of people who truly love what
+            they do. From our chefs to our servers, every team member is
+            dedicated to crafting hearty meals and welcoming experiences that
+            feel like home. We believe that great food comes from great people
+            and our team brings warmth, tradition, and care to every plate we
+            serve.
           </p>
           <button className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
-            Explore Jobs
+            CONTACT US
           </button>
         </div>
       </div>
