@@ -13,7 +13,7 @@ const Add = ({ token }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("Men");
+  const [category, setCategory] = useState("Breakfast");
   const [subCategory, setSubCategory] = useState("Topwear");
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
@@ -90,7 +90,7 @@ const Add = ({ token }) => {
               hidden
             />
           </label>
-          <label htmlFor="image2">
+          {/* <label htmlFor="image2">
             <img
               className="w-20"
               src={
@@ -146,7 +146,7 @@ const Add = ({ token }) => {
               id="image4"
               hidden
             />
-          </label>
+          </label> */}
         </div>
       </div>
 
@@ -180,13 +180,13 @@ const Add = ({ token }) => {
             onChange={(e) => setCategory(e.target.value)}
             className="w-full px-3 py-2 "
           >
-            <option value="Men">Men</option>
-            <option value="Women">Women</option>
-            <option value="Kids">Kids</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
           </select>
         </div>
 
-        <div>
+        {/* <div>
           <p className="mb-2">Sub Category</p>
           <select
             onChange={(e) => setSubCategory(e.target.value)}
@@ -197,7 +197,7 @@ const Add = ({ token }) => {
             <option value="Bottomwear">Bottomwear</option>
             <option value="Winterwear">Winterwear</option>
           </select>
-        </div>
+        </div> */}
 
         <div>
           <p className="mb-2">Product Price</p>
@@ -211,7 +211,7 @@ const Add = ({ token }) => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <p className="mb-2">Product Sizes</p>
         <div className="flex gap-3">
           <div
@@ -300,7 +300,7 @@ const Add = ({ token }) => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="flex gap-2 mt-2">
         <input
